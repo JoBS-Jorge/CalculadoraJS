@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+body {
+    background: #F4A460;
+    margin: auto;
+    max-width: 900px;
+    align-items: center;
+    justify-content: center;
+    padding: 9em;
+}
+
+#calc {
+    width: 400px;
+    padding: .5em;
+    background-color: #c4c4c4;
+    border-radius: 10px;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+}
+
+#title-App {
+    font-size: .8em;
+    font-weigth: 300;
+    color: #666;
+}
+
+#operacoes {
+    text-align: right;
+}
+
+#prev-operation {
+    color: #777;
+    padding: .2em;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+
+#cur-operation {
+    min-height: 1.6em;
+    font-size: 3em;
+    font-weigth: 700;
+    padding: 0.2em;
+    overflow-wrap: break-word;
+}
+
+#buttons-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 3px;
+}
+
+#buttons-container button {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: #dbdbdb
+}
+
+#buttons-container .number {
+    background-color: #f3f3f3;
+}
+
+#buttons-container button:hover {
+    background-color:#bababa;
+    border-color: #999;
+}
+
+#buttons-container #equal-button {
+    grid-column: span 2;
+    background-color: #75a5cb;
+}
+
+#buttons-container #equal-button:hover{
+    background-color: #3a91d8;
+}
+
+footer {
+    background: #ffffff;
+    padding: 1em;
+    border-radius: 5px;
+    width: 400px
+}
+
